@@ -38,6 +38,7 @@ $(document).ready(function() {
 $(".begin").on( "click", function() {
     document.getElementById("quizBody").style.visibility = "visible";
     // countdown();
+    var timerId = setInterval(countdown, 1000);
 
 
     
@@ -51,7 +52,6 @@ check();
 var timeLeft = 60;
 var elem = document.getElementById('timer');    
 // console.log(elem);
-var timerId = setInterval(countdown, 1000);
 
 function countdown() {
     if (timeLeft === 0) {
